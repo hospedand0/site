@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Como Hospedar um Site Grátis - Guia Detalhado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Guia de Hospedagem</a>
+            <ul class="nav-links">
+                <li><a href="index.html">O que é?</a></li>
+                <li><a href="como-hospedar.html">Como Hospedar um Site</a></li>
+                <li><a href="hospedar-gratis.html" class="active">Hospedar Grátis</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <h1>Como Hospedar um Site Grátis (Guia Detalhado)</h1>
+            <p>Hospedar um site gratuitamente é uma excelente opção para quem está começando, testando ideias, ou para projetos pessoais e de baixo tráfego. Embora ofereçam menos recursos e flexibilidade que as opções pagas, podem ser suficientes para muitas necessidades. Veja como fazer:</p>
+
+            <h2>Entendendo as Limitações da Hospedagem Grátis:</h2>
+            <p>Antes de prosseguir, é importante estar ciente das desvantagens comuns:</p>
+            <ul>
+                <li><strong>Subdomínio:</strong> Geralmente, você terá um subdomínio (ex: `seuprojeto.provedorgratis.com`) em vez de um domínio próprio (`seuprojeto.com`).</li>
+                <li><strong>Anúncios:</strong> Muitos provedores gratuitos exibem anúncios em seu site.</li>
+                <li><strong>Recursos Limitados:</strong> Menos espaço em disco, largura de banda e capacidade de processamento.</li>
+                <li><strong>Suporte Limitado:</strong> O suporte técnico pode ser mais lento ou inexistente.</li>
+                <li><strong>Menos Confiabilidade:</strong> Maior chance de instabilidade ou lentidão.</li>
+                <li><strong>Sem SSL (ou pago):</strong> A criptografia SSL pode não ser oferecida gratuitamente.</li>
+                <li><strong>Restrições de Conteúdo/Uso:</strong> Alguns tipos de sites podem ser proibidos.</li>
+            </ul>
+
+            <h2>Opções Populares para Hospedagem Grátis:</h2>
+            <p>Existem diferentes abordagens para hospedar um site gratuitamente:</p>
+
+            <h3>1. Plataformas de Construção de Sites (Website Builders com Plano Grátis):</h3>
+            <p>São ideais para quem não tem conhecimento de programação. Eles oferecem um editor visual "arrasta e solta" e hospedagem inclusa.</p>
+            <ul>
+                <li><strong>Wix (Plano Grátis):</strong> Permite criar sites visualmente. Vem com subdomínio e anúncios. Bom para portfólios simples, pequenos negócios.</li>
+                <li><strong>Weebly (Plano Grátis):</strong> Similar ao Wix, fácil de usar.</li>
+                <li><strong>WordPress.com (Plano Grátis):</strong> Versão hospedada do WordPress, mais limitada que a versão auto-hospedada, mas ótima para blogs pessoais.</li>
+                <li><strong>Google Sites:</strong> Muito simples, ideal para sites informativos básicos ou intranets. Requer uma conta Google.</li>
+            </ul>
+            <h4>Como usar (Exemplo Wix/WordPress.com):</h4>
+            <ol>
+                <li><strong>Crie uma Conta:</strong> Acesse o site da plataforma (Wix, WordPress.com) e crie sua conta gratuita.</li>
+                <li><strong>Escolha um Modelo:</strong> Selecione um template (modelo) que se adeque ao seu projeto.</li>
+                <li><strong>Edite o Conteúdo:</strong> Use o editor visual para adicionar seus textos, imagens, vídeos. Arraste e solte elementos, personalize cores e fontes.</li>
+                <li><strong>Publique o Site:</strong> Clique no botão "Publicar". Seu site estará online no subdomínio fornecido pela plataforma.</li>
+            </ol>
+
+            <h3>2. Serviços de Hospedagem Gratuita Tradicional (com Limitações):</h3>
+            <p>Alguns provedores oferecem planos de hospedagem "tradicionais" gratuitos, onde você pode fazer upload de seus próprios arquivos HTML, CSS, JS, ou até mesmo instalar um CMS.</p>
+            <ul>
+                <li>**000webhost:** Oferece PHP, MySQL e espaço em disco. Bom para aprender a hospedar. Pode ter instabilidade.</li>
+                <li>**FreeHosting.com:** Oferece planos com PHP, MySQL. Fique atento às limitações.</li>
+                <li>**ByetHost:** Semelhante ao 000webhost.</li>
+            </ul>
+            <h4>Como usar (Exemplo 000webhost):</h4>
+            <ol>
+                <li><strong>Crie uma Conta:</strong> Acesse o 000webhost e registre-se para um plano gratuito.</li>
+                <li><strong>Crie um Novo Site:</strong> No painel de controle, crie um novo site. Você terá um subdomínio.</li>
+                <li><strong>Acesse o Gerenciador de Arquivos ou FTP:</strong>
+                    <ul>
+                        <li><strong>Gerenciador de Arquivos:</strong> Use a interface web do painel para navegar até a pasta `public_html` e fazer upload dos seus arquivos.</li>
+                        <li><strong>FTP:</strong> Se você tiver muitos arquivos, use um cliente FTP como FileZilla. As credenciais FTP serão fornecidas no painel do 000webhost. Conecte-se e envie seus arquivos para a pasta `public_html`.</li>
+                    </ul>
+                </li>
+                <li><strong>Configure Banco de Dados (se necessário):</strong> Se seu site for dinâmico (ex: WordPress), crie um banco de dados MySQL e um usuário, e atualize o arquivo de configuração do seu site com essas informações.</li>
+                <li><strong>Teste o Site:</strong> Acesse seu subdomínio no navegador para verificar se tudo funciona.</li>
+            </ol>
+
+            <h3>3. Hospedagem de Sites Estáticos (para Desenvolvedores):</h3>
+            <p>Se seu site é puramente HTML, CSS e JavaScript (sem backend ou banco de dados), existem opções excelentes e robustas para hospedagem gratuita de sites estáticos:</p>
+            <ul>
+                <li><strong>GitHub Pages:</strong> Perfeito para desenvolvedores e projetos de código aberto. Seu site é hospedado diretamente de um repositório GitHub.</li>
+                <li><strong>Netlify (Plano Grátis):</strong> Oferece hospedagem para sites estáticos com CDN (Content Delivery Network), HTTPS gratuito e integração com Git. Muito rápido e fácil de usar.</li>
+                <li><strong>Vercel (Plano Hobby):</strong> Semelhante ao Netlify, excelente para projetos front-end.</li>
+            </ul>
+            <h4>Como usar (Exemplo Netlify):</h4>
+            <ol>
+                <li><strong>Crie sua Conta Netlify:</strong> Conecte-se com seu GitHub, GitLab ou Bitbucket.</li>
+                <li><strong>Importe seu Projeto:</strong> Selecione o repositório onde seus arquivos do site estão armazenados.</li>
+                <li><strong>Configure a Publicação:</strong> O Netlify geralmente detecta as configurações automaticamente. Seus arquivos principais (`index.html`, etc.) devem estar na raiz ou em uma pasta especificada.</li>
+                <li><strong>Implantação Automática:</strong> Cada vez que você fizer um "push" de alterações para o repositório, o Netlify automaticamente re-implanta seu site.</li>
+                <li><strong>Acesse o Site:</strong> O Netlify fornecerá um subdomínio (ex: `nomedoapp.netlify.app`). Você pode adicionar um domínio personalizado se quiser (o domínio em si pode ser pago).</li>
+            </ol>
+
+            <h2>Conclusão sobre Hospedagem Grátis:</h2>
+            <p>A hospedagem gratuita é um ótimo ponto de partida para aprender e validar ideias. No entanto, para projetos sérios, sites de negócios ou com alto tráfego, é sempre recomendado investir em uma hospedagem paga para garantir desempenho, segurança, suporte e controle total sobre seu domínio e recursos.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Guia de Hospedagem. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Como Hospedar um Site na Web - Guia Detalhado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Guia de Hospedagem</a>
+            <ul class="nav-links">
+                <li><a href="index.html">O que é?</a></li>
+                <li><a href="como-hospedar.html" class="active">Como Hospedar um Site</a></li>
+                <li><a href="hospedar-gratis.html">Hospedar Grátis</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <h1>Como Hospedar um Site (Guia Detalhado)</h1>
+            <p>Hospedar um site envolve uma série de passos, desde a escolha do serviço até a publicação dos arquivos. Siga este guia detalhado para colocar seu site no ar de forma eficiente.</p>
+
+            <h2>Passo 1: Defina o Objetivo e Tipo de Site</h2>
+            <p>Antes de escolher a hospedagem, saiba qual é o propósito do seu site (blog pessoal, loja virtual, portfólio, site institucional) e qual o volume de tráfego esperado. Isso influenciará a escolha do tipo de hospedagem.</p>
+
+            <h2>Passo 2: Escolha o Tipo de Hospedagem</h2>
+            <ul>
+                <li><strong>Hospedagem Compartilhada:</strong> Boa para iniciantes e sites pequenos com baixo tráfego. É a mais econômica.</li>
+                <li><strong>VPS (Servidor Virtual Privado):</strong> Para sites de médio porte que precisam de mais recursos e controle.</li>
+                <li><strong>Hospedagem Dedicada:</strong> Para grandes empresas ou sites com altíssimo tráfego, oferece controle total e alto desempenho.</li>
+                <li><strong>Hospedagem Cloud (em Nuvem):</strong> Excelente para escalabilidade e sites com tráfego variável.</li>
+                <li><strong>Hospedagem WordPress:</strong> Otimizada para sites feitos em WordPress, oferece desempenho e segurança específicos.</li>
+            </ul>
+
+            <h2>Passo 3: Pesquise e Escolha um Provedor de Hospedagem</h2>
+            <p>Alguns provedores populares e confiáveis no Brasil e no mundo incluem Hostinger, KingHost, Locaweb, GoDaddy, HostGator, Bluehost. Ao escolher, considere:</p>
+            <ul>
+                <li><strong>Reputação e Avaliações:</strong> Verifique o que outros usuários dizem.</li>
+                <li><strong>Suporte Técnico:</strong> É crucial ter um bom suporte, preferencialmente 24/7 e em português.</li>
+                <li><strong>Recursos Oferecidos:</strong> Espaço em disco, largura de banda, contas de e-mail, SSL grátis, backups.</li>
+                <li><strong>Preço:</strong> Compare os planos e o custo-benefício a longo prazo.</li>
+                <li><strong>Uptime (Tempo de Atividade):</strong> Garanta que o provedor ofereça alta porcentagem de uptime (99.9% é o ideal).</li>
+                <li><strong>Localização do Servidor:</strong> Servidores mais próximos do seu público-alvo podem oferecer melhor velocidade.</li>
+            </ul>
+
+            <h2>Passo 4: Registre um Nome de Domínio</h2>
+            <p>O nome de domínio é o endereço do seu site (ex: `meusite.com.br`). Você pode registrá-lo diretamente com o provedor de hospedagem ou em registradores de domínio como Registro.br (para `.br`) ou GoDaddy, Namecheap (para `.com`, `.net`, etc.).</p>
+            <p>Escolha um nome fácil de lembrar, relevante e disponível. Se registrar em um local diferente da hospedagem, você precisará apontar o DNS do domínio para o servidor da sua hospedagem (o provedor de hospedagem fornecerá essas informações).</p>
+
+            <h2>Passo 5: Contrate o Plano de Hospedagem</h2>
+            <p>Após escolher o provedor e o plano, siga o processo de contratação. Durante a configuração inicial, você geralmente terá a opção de conectar seu domínio existente ou registrar um novo.</p>
+
+            <h2>Passo 6: Acesse o Painel de Controle (cPanel/Painel Proprietário)</h2>
+            <p>A maioria dos provedores oferece um painel de controle (o mais comum é o cPanel) para gerenciar sua hospedagem. É por aqui que você fará o upload de arquivos, criará contas de e-mail, gerenciará bancos de dados, etc.</p>
+
+            <h2>Passo 7: Faça o Upload dos Arquivos do Seu Site</h2>
+            <p>Existem algumas maneiras de enviar os arquivos do seu site para o servidor:</p>
+            <ul>
+                <li><strong>Gerenciador de Arquivos do cPanel:</strong> Uma interface web simples para fazer upload, editar e organizar arquivos.</li>
+                <li><strong>FTP (File Transfer Protocol):</strong> Use um cliente FTP (como FileZilla) para transferir arquivos do seu computador para o servidor de forma mais robusta, ideal para grandes volumes de arquivos. Você precisará das credenciais FTP fornecidas pelo seu provedor.</li>
+                <li><strong>Instalador Automático (para CMS como WordPress):</strong> Se você está usando um CMS (Content Management System) como WordPress, Joomla ou Drupal, muitos provedores oferecem instaladores automáticos (Softaculous no cPanel), que simplificam muito o processo de instalação.</li>
+            </ul>
+            <p>Certifique-se de que os arquivos principais (como `index.html` ou `index.php`) estejam na pasta pública (`public_html` ou `www`) do seu servidor.</p>
+
+            <h2>Passo 8: Configure Bancos de Dados (se necessário)</h2>
+            <p>Se seu site usa um CMS (como WordPress) ou outra aplicação dinâmica, ele precisará de um banco de dados (geralmente MySQL). No painel de controle, você precisará:</p>
+            <ol>
+                <li>Criar um novo banco de dados.</li>
+                <li>Criar um usuário para o banco de dados.</li>
+                <li>Associar o usuário ao banco de dados e conceder as permissões necessárias.</li>
+                <li>Atualizar o arquivo de configuração do seu site (ex: `wp-config.php` no WordPress) com os dados do banco de dados (nome do banco, usuário, senha e host).</li>
+            </ol>
+
+            <h2>Passo 9: Teste o Site</h2>
+            <p>Após o upload e a configuração, digite o endereço do seu domínio no navegador. Pode levar algumas horas (até 48 horas) para que o DNS propague completamente, mas geralmente é mais rápido. Verifique todas as páginas, links e funcionalidades para garantir que tudo está funcionando corretamente.</p>
+
+            <h2>Passo 10: Instale um Certificado SSL</h2>
+            <p>Um certificado SSL (Secure Socket Layer) criptografa a conexão entre o navegador do usuário e seu site, protegendo dados. Ele também é importante para o SEO (ranqueamento no Google). Muitos provedores oferecem SSL gratuito (Let's Encrypt). Ative-o pelo painel de controle da sua hospedagem.</p>
+
+            <p>Parabéns! Seu site agora está online e acessível para o mundo. Lembre-se de fazer backups regulares e manter seu site e plugins/temas atualizados para garantir segurança e bom funcionamento.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Guia de Hospedagem. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
